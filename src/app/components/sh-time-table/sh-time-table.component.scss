@@ -1,3 +1,5 @@
+@import '../../../global.colors.scss';
+
 .timetable{
     width: 25rem;
     .title-calendar{
@@ -45,7 +47,7 @@
                 top: 40%;
 
                 .green{
-                    color: #12b886;
+                    color: $Green-Color;
                 }
             }
 
@@ -64,24 +66,24 @@
             }
 
             .bag-yellow{
-                background-color: #fab005;
+                background-color: $Yellow-Color;
                 border: rgb(31, 31, 31);
                 border-width: 1px;
                 border-style: solid;
             }
 
             .bag-gray{
-                background-color: gray;
+                background-color: $Gray-Color;
                 border: rgb(31, 31, 31);
                 border-width: 1px;
                 border-style: solid;
             }
 
             .color-yellow{
-                color: #fab005;
+                color: $Yellow-Color;
             }
             .color-gray{
-                color: gray;
+                color: $Gray-Color;
                 font-weight: 500;
             }
 
@@ -116,14 +118,14 @@
 
                   
                     .button{
-                        color: #12b886;
-                        border: 2px solid #12b886;
+                        color: $Green-Color;
+                        border: 2px solid $Green-Color;
                         padding: 0.18rem 0.2rem 0.3rem 0.2rem;
                         border-radius: 0.5rem;
                         cursor: pointer;
 
                         &:hover{
-                            background-color: #12b886;
+                            background-color: $Green-Color;
                             color: white;
                             font-weight: 600;
                         }
