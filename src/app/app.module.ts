@@ -13,12 +13,14 @@ import { DashboardPage } from './pages/dashboard/dashboard.component';
 //components imports
 import { AppComponent } from './app.component';
 import { ShNavigationComponent } from './components/sh-navigation/sh-navigation.component';
+import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardPage,
-    ShNavigationComponent
+    ShNavigationComponent,
+    ShTimeTableComponent
   ],
   imports: [
     BrowserModule,
