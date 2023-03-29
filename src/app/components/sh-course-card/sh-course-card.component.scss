@@ -1,14 +1,18 @@
+@import '../../../global.colors.scss';
+
 .card{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     border-radius: 1.3rem;
-    max-width: 25rem;
+    max-width: 30rem;
     padding: 1.5rem;
     box-sizing: border-box;
     border-width: 1px;
+    font-size: 1.3rem;
     .img-rating{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 1rem;
         img{
             width: 4rem;
             border-color: rgb(215, 211, 211);
@@ -19,7 +23,7 @@
             font-size: 1.3rem;
         }
         .star{
-            color:  #fab005 !important;
+            color:  $Yellow-Color !important;
             font-size: 1.3rem;
         }
     }
@@ -33,18 +37,19 @@
     }
 
     .desc{
-        padding: 0.5rem 2rem;
+        padding: 1rem 2rem;
     }
 
     .line{
         height: 2px;
-        background-color: #495057;
+        background-color: $Dark-Gray-Color;
     }
 
     .price{
         display: flex;
         justify-content: space-between;
-        color: #495057 ;
+        color: $Dark-Gray-Color ;
+        padding-top: 1rem;
         h3{
             padding-bottom: unset !important;
         }

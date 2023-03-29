@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Course } from 'src/app/models/course';
 
 @Component({
-  selector: 'app-sh-course-card',
+  selector: 'sh-course-card',
   templateUrl: './sh-course-card.component.html',
   styleUrls: ['./sh-course-card.component.scss']
 })
