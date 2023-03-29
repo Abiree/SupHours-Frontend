@@ -45,20 +45,6 @@ export class ShTimeTableComponent {
   }
 
 
-
-  IsSecondTimeBiggerThanFirst(ptimeFirst:any,ptimeSecond:any){
-
-    if(this.AddTwoTime(ptimeFirst,"0:0:0")<=this.AddTwoTime(ptimeSecond,"0:0:0")){
-      console.log("Second is buigger")
-    
-    }
-
-    else{
-      console.log("First is buigger")
-    }
-
-  }
-
   AddTwoTime(ptimeFirst:any,ptimeSecond:any){
     const llistFirst=ptimeFirst.split(":") ;
     const llistSecond=ptimeSecond.split(":");
@@ -79,9 +65,7 @@ export class ShTimeTableComponent {
       minSecond=Number(llistSecond[0]);
     }
   
-
     const minTotal=minFirst+minSecond;
-    console.log(minTotal)
 
     return minTotal;
 
