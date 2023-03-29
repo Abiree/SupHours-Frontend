@@ -1,16 +1,33 @@
+//modules imports 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ToggleButtonModule} from 'primeng/togglebutton';
+import { AvatarModule } from 'primeng/avatar';
+import { FormsModule } from '@angular/forms';
+import { BadgeModule } from 'primeng/badge';
+//router import
 import { AppRoutingModule } from './app-routing.module';
+//pages imports
+import { DashboardPage } from './pages/dashboard/dashboard.component';
+//components imports
 import { AppComponent } from './app.component';
+import { ShNavigationComponent } from './components/sh-navigation/sh-navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardPage,
+    ShNavigationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    ToggleButtonModule,
+    FormsModule,
+    AvatarModule,
+    BadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
