@@ -1,0 +1,60 @@
+<nav class="Sh-Navigation">
+    <img src="/assets/images/Book.png" alt="logo"/>
+    <h3 class="Sh-Logo">
+        SupHours
+    </h3>
+
+    <div class="Sh-Nav-Menu" >
+        <ul>
+            <li>
+                <a routerLink="/dashboard" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a routerLink="/discover" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    Discover
+                </a>
+            </li>
+            <li>
+                <a routerLink="/calendar" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    Calendar
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="Sh-Nav-User">
+        <div class="Sh-Utilities">
+            <i class="pi pi-bell text-3xl" style="font-size: 2rem" pBadge value="2" severity="danger"></i>
+            <i [ngClass]="!DarkMode?'pi pi-sun':'pi pi-moon'" style="font-size: 2rem" (click)="toggleDarkMode()"></i>
+        </div>
+        <div class="Sh-UserDropDown">
+            <p-avatar label="U" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+            <p>Eladraoui Chouaib</p>
+        </div>
+        <div class="Sh-BarsMenu">
+            <i class="pi pi-bars" style="font-size: 2rem; margin-left: 1rem;" (click)="toggleMenu()"></i>
+        </div>
+
+        <div class="DropDown-Menu" *ngIf="MenuToggled">
+            <ul>
+                <li>
+                    <a routerLink="/dashboard" routerLinkActive="active" ariaCurrentWhenActive="page">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/discover" routerLinkActive="active" ariaCurrentWhenActive="page">
+                        Discover
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/calendar" routerLinkActive="active" ariaCurrentWhenActive="page">
+                        Calendar
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

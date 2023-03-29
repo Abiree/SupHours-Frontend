@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.component';
+import { DashboardPage } from './pages/dashboard/dashboard.component';
 
-const routes: Routes = [{
-  path:'',
-  component:ShTimeTableComponent
-}];
+const routes: Routes = [
+  {
+    path: 'dashboard',
+    title: 'dashbord',
+    component: DashboardPage
+  },
+  { 
+    path: '',
+    redirectTo: '/dashboard',
+    pathMatch: 'full'
+  }, 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

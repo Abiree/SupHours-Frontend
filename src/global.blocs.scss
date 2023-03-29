@@ -1,0 +1,23 @@
+@mixin centerize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin link($bgColor:inherit , $padding: 0) {
+        font-weight: 400;
+        text-decoration: none;
+        color: #000 ;
+        padding: $padding;
+        &:hover{
+            font-size: 1.7rem;
+            transition: .4s;
+            font-weight: 500;
+        }
+        &.active{
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: $Green-Color;
+            background-color: $bgColor;
+        }
+}
