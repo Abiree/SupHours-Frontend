@@ -1,0 +1,139 @@
+.timetable{
+    width: 25rem;
+    .title-calendar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+        
+        .title{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .calendar{
+            font-weight: 500;
+            cursor: pointer;
+            &:hover{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .timetable-items{
+        padding: 0rem 2rem;
+        .timetable-item{}
+        .date{
+
+            padding: 1rem 0;
+            
+        }
+
+
+        .timetable-cards{
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            max-width: 30rem;
+            border-radius: 1rem;
+        }
+
+        .timetable-card{
+            display: flex;
+            position: relative;
+
+            .arrow{
+                position: absolute;
+                left: 0;
+                top: 40%;
+
+                .green{
+                    color: #12b886;
+                }
+            }
+
+            .hour{
+                min-width: 3.75rem;
+                text-align: center;
+                margin: auto 0;
+                padding: 0 1.5rem;
+            }
+
+            .line{
+                height: 3rem;
+                width: 0.5rem;
+                background-color: black;
+                margin: auto 0;
+            }
+
+            .bag-yellow{
+                background-color: #fab005;
+                border: rgb(31, 31, 31);
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            .bag-gray{
+                background-color: gray;
+                border: rgb(31, 31, 31);
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            .color-yellow{
+                color: #fab005;
+            }
+            .color-gray{
+                color: gray;
+                font-weight: 500;
+            }
+
+            .lesson-title-duree-button{
+
+               display: flex;
+                padding: 1rem;
+                width: 100%;
+                justify-content: space-between;
+
+                .lesson-title{
+                   
+                    margin: auto 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+
+                    .title{}
+                    .lesson{}
+                
+                }
+
+                .duree-button{
+                    margin: auto 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+
+                    .duree{
+                        text-align: end;
+                    }
+
+                  
+                    .button{
+                        color: #12b886;
+                        border: 2px solid #12b886;
+                        padding: 0.18rem 0.2rem 0.3rem 0.2rem;
+                        border-radius: 0.5rem;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: #12b886;
+                            color: white;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}

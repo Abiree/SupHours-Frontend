@@ -1,0 +1,34 @@
+<div class="timetable">
+    <div class="title-calendar">
+        <div class="title">TimeTable</div>
+        <div class="calendar">calendar</div>
+    </div>
+
+    <div class="timetable-items">
+        <div class="timetable-item" *ngFor="let item of courses">
+            <div class="date">{{ReturnDate(item.date) | date:'dd MMMM' }}</div>
+    
+            <div class="timetable-cards">
+
+            <div class="timetable-card"  *ngFor="let session of item.session;let i=index">
+                <div class="arrow" *ngIf="CheckIfSessionIsOpen(item.date,session.hour,session.duree)"><i class="pi pi-arrow-right green" ></i></div>
+                <div class="hour">{{toTime(session.hour) | date:'hh:mm'}}</div>
+                <div [ngClass]="i%2==0?'line bag-yellow':'line bag-gray'"></div>
+                <div class="lesson-title-duree-button">
+                    <div class="lesson-title">
+                        <div class="lesson color-gray">{{session.lesson}}</div>
+                        <div class="title">{{session.title}}</div>
+
+                    </div>
+                    <div class="duree-button">
+                        <div class="duree color-gray">{{ConvertDuree(session.duree)}}</div>
+                        <div class="button" *ngIf="CheckIfSessionIsOpen(item.date,session.hour,session.duree)">participate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
+</div>
