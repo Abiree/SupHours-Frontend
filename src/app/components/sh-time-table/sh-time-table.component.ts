@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'app-sh-time-table',
+  selector: 'sh-time-table',
   templateUrl: './sh-time-table.component.html',
   styleUrls: ['./sh-time-table.component.scss']
 })

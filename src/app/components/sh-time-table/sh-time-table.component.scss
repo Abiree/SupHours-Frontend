@@ -1,21 +1,21 @@
 @import '../../../global.colors.scss';
 
 .timetable{
-    width: 25rem;
+    width: 35rem;
+    font-size: 1.3rem;
     .title-calendar{
         display: flex;
         justify-content: space-between;
         padding-bottom: 0.5rem;
         
         .title{
-            font-size: 1.3rem;
+            font-size: 2rem;
             font-weight: 600;
         }
         .calendar{
             font-weight: 500;
             cursor: pointer;
             &:hover{
-                font-size: 1rem;
                 font-weight: 600;
             }
         }
