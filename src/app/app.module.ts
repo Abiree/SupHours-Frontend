@@ -6,6 +6,8 @@ import {ToggleButtonModule} from 'primeng/togglebutton';
 import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
+import { ProgressBarModule } from 'primeng/progressbar';
+
 //router import
 import { AppRoutingModule } from './app-routing.module';
 //pages imports
@@ -15,6 +17,7 @@ import { AppComponent } from './app.component';
 import { ShCourseCardComponent } from './components/sh-course-card/sh-course-card.component';
 import { ShNavigationComponent } from './components/sh-navigation/sh-navigation.component';
 import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.component';
+import { ShProgressComponent } from './components/sh-progress/sh-progress.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.c
     ShCourseCardComponent,
     DashboardPage,
     ShNavigationComponent,
-    ShTimeTableComponent
+    ShTimeTableComponent,
+    ShProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,8 @@ import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.c
     ToggleButtonModule,
     FormsModule,
     AvatarModule,
-    BadgeModule
+    BadgeModule,
+    ProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
