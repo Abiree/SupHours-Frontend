@@ -1,21 +1,19 @@
-import { Component } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sh-navigation-component',
   templateUrl: './sh-navigation.component.html',
   styleUrls: ['./sh-navigation.component.scss']
 })
-export class ShNavigationComponent {
+export class ShNavigationComponent{
 
-  DarkMode:boolean = false;
+  @Input() DarkMode:boolean = false;
+  @Input() toggleDarkMode: (() => void) = () => {};
+  
   MenuToggled:boolean = false;
 
   toggleMenu = () => {
     this.MenuToggled = !this.MenuToggled;
   }
 
-  toggleDarkMode = () => {
-    this.DarkMode = !this.DarkMode;
-  }
 }

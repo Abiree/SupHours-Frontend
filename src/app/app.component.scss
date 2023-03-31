@@ -1,4 +1,9 @@
-.Container{
-
+.App{
+    background-color: var(--bg-color);
 }
 
+.Container{
+    color: var(--text-color);
+    max-width: 120rem;
+    margin: auto;
+}

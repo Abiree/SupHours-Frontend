@@ -7,8 +7,8 @@
 @mixin link($bgColor:inherit , $padding: 0) {
         font-weight: 400;
         text-decoration: none;
-        color: #000 ;
         padding: $padding;
+        color: var(--text-color);
         &:hover{
             font-size: 1.7rem;
             transition: .4s;
@@ -17,7 +17,7 @@
         &.active{
             font-size: 1.7rem;
             font-weight: 600;
-            color: $Green-Color;
+            color: var(--Green-Color);
             background-color: $bgColor;
         }
 }
