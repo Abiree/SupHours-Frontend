@@ -92,19 +92,19 @@
 
         .yellow{
             .p-progressbar-value{
-                background: $Yellow-Color;
+                background: var(--Yellow-Color);
             }
         }
 
         .blue{
             .p-progressbar-value{
-                background: $Blue-Color;
+                background: var(--Blue-Color);
             }
         }
 
         .green{
             .p-progressbar-value{
-                background: $Green-Color;
+                background: var(--Green-Color);
             }
         }
 
