@@ -23,7 +23,7 @@
             font-size: 1.3rem;
         }
         .star{
-            color:  $Yellow-Color !important;
+            color:  var(--Yellow-Color) !important;
             font-size: 1.3rem;
         }
     }
@@ -42,13 +42,13 @@
 
     .line{
         height: 2px;
-        background-color: $Dark-Gray-Color;
+        background-color: var(--Dark-Gray-Color);
     }
 
     .price{
         display: flex;
         justify-content: space-between;
-        color: $Dark-Gray-Color ;
+        color: var(--Dark-Gray-Color) ;
         padding-top: 1rem;
         h3{
             padding-bottom: unset !important;

@@ -59,7 +59,7 @@
     @media screen and (max-width: 52rem) {
         .Sh-Nav-User > .DropDown-Menu{
             display: block;
-            background-color: $Green-Color;
+            background-color: var(--Green-Color);
             right: 2.5rem;
             top: 5.5rem;
             position: absolute;
@@ -91,7 +91,7 @@
 :host{
     ::ng-deep{
         .p-avatar{
-            background-color: $Green-Color;
+            background-color: var(--Green-Color);
             color: #fff;
         }
     }

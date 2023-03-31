@@ -47,7 +47,7 @@
                 top: 40%;
 
                 .green{
-                    color: $Green-Color;
+                    color: var(--Green-Color);
                 }
             }
 
@@ -66,24 +66,24 @@
             }
 
             .bag-yellow{
-                background-color: $Yellow-Color;
+                background-color: var(--Yellow-Color);
                 border: rgb(31, 31, 31);
                 border-width: 1px;
                 border-style: solid;
             }
 
             .bag-gray{
-                background-color: $Gray-Color;
+                background-color: var(--Gray-Color);
                 border: rgb(31, 31, 31);
                 border-width: 1px;
                 border-style: solid;
             }
 
             .color-yellow{
-                color: $Yellow-Color;
+                color: var(--Yellow-Color);
             }
             .color-gray{
-                color: $Gray-Color;
+                color: var(--Gray-Color);
                 font-weight: 500;
             }
 
@@ -118,14 +118,14 @@
 
                   
                     .button{
-                        color: $Green-Color;
-                        border: 2px solid $Green-Color;
+                        color: var(--Green-Color);
+                        border: 2px solid var(--Green-Color);
                         padding: 0.18rem 0.2rem 0.3rem 0.2rem;
                         border-radius: 0.5rem;
                         cursor: pointer;
 
                         &:hover{
-                            background-color: $Green-Color;
+                            background-color: var(--Green-Color);
                             color: white;
                             font-weight: 600;
                         }
