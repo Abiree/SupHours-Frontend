@@ -1,0 +1,33 @@
+<div class="homework">
+
+    <div class="title-filter">
+        <div class="title">Homewrok</div>
+        <div class="filter">
+          newest
+        </div>
+    </div>
+
+    <div class="homework-cards">
+
+       
+            <div class="homework-card" *ngFor="let homework of homeworkList;let i=index">
+
+                <div class="course-name-deadline" >
+
+                   
+                        <div class="course-name"><p>{{homework.courseName}} {{homework.homeworkname}}</p></div>
+                        <div class="deadline {{ReturnDeadlineText(homework.deadline).class}}"><p>{{ReturnDeadlineText(homework.deadline).text}}</p></div>
+        
+
+                </div>
+
+                <div class="icon">
+                    <i class="pi pi-cloud-upload upload" ></i>
+                </div>
+
+            </div>
+       
+
+    </div>
+
+</div>

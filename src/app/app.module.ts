@@ -18,6 +18,7 @@ import { ShCourseCardComponent } from './components/sh-course-card/sh-course-car
 import { ShNavigationComponent } from './components/sh-navigation/sh-navigation.component';
 import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.component';
 import { ShProgressComponent } from './components/sh-progress/sh-progress.component';
+import { ShHomeworkComponent } from './components/sh-homework/sh-homework.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ShProgressComponent } from './components/sh-progress/sh-progress.compon
     DashboardPage,
     ShNavigationComponent,
     ShTimeTableComponent,
-    ShProgressComponent
+    ShProgressComponent,
+    ShHomeworkComponent
   ],
   imports: [
     BrowserModule,
