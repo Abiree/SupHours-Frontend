@@ -7,6 +7,10 @@ import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { SidebarModule } from 'primeng/sidebar';
+import { TagModule } from 'primeng/tag';
+import { TabViewModule } from 'primeng/tabview';
+import { RatingModule } from 'primeng/rating'
 import { FullCalendarModule } from '@fullcalendar/angular';
 
 //router import
@@ -20,6 +24,7 @@ import { ShNavigationComponent } from './components/sh-navigation/sh-navigation.
 import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.component';
 import { ShProgressComponent } from './components/sh-progress/sh-progress.component';
 import { ShHomeworkComponent } from './components/sh-homework/sh-homework.component';
+import { ShCourseSidebarDetailComponent } from './components/sh-course-sidebar-detail/sh-course-sidebar-detail.component';
 import { ShCalendarComponent } from './components/sh-calendar/sh-calendar.component';
 import { CalendarPage } from './pages/calendar/calendar.component';
 
@@ -32,6 +37,7 @@ import { CalendarPage } from './pages/calendar/calendar.component';
     ShTimeTableComponent,
     ShProgressComponent,
     ShHomeworkComponent,
+    ShCourseSidebarDetailComponent,
     ShCalendarComponent,
     CalendarPage
   ],
@@ -44,7 +50,11 @@ import { CalendarPage } from './pages/calendar/calendar.component';
     AvatarModule,
     BadgeModule,
     ProgressBarModule,
-    FullCalendarModule
+    SidebarModule,
+    TagModule,
+    TabViewModule,
+    RatingModule,
+    FullCalendarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

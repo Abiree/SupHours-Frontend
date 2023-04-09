@@ -1,4 +1,8 @@
-<div class="card">
+<p-sidebar [(visible)]="isSideBarVisible" position="right">
+    <sh-course-sidebar-detail *ngIf="selectCourse" [course]="selectedCourse"></sh-course-sidebar-detail>
+</p-sidebar>
+
+<div class="card" (click)="selectCourse(course)">
     <div class="img-rating">
         <img src={{course.image}} alt="course_name">
         <div class="rating">{{course.rating}} <i class="pi pi-spin pi-star-fill star"></i></div>
