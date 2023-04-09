@@ -1,0 +1,153 @@
+.Sh-Course-Card{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+
+    &-Image{
+        width: 20rem;
+        border: solid 1px;
+        margin-right: 1.5rem ;
+        border-radius: 1rem;
+    }
+
+    &-Body{
+        h1{
+            margin: 1rem 0rem;
+            font-size: 2.5rem;
+            margin-right: 5rem;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            overflow: hidden;
+            max-height: 2.5em;
+            line-height: 1.2em;
+            position: relative;
+            &::after{
+                content: "...";
+                position: absolute;
+                right: 0px; 
+                bottom: .3rem;
+            }
+        }
+        p{
+            margin: .5rem 0rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            span{
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+        .Sh-Course-Card-Actions{
+            position: absolute;
+            bottom: 0;
+            button{
+                padding: 1rem 3rem;
+                border: none;
+                border-radius: .5rem;
+                margin-right: 1rem;
+                color: #fff;
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                    border: solid .2rem var(--sidebar-text-color);
+                    transition: .1s;
+                }
+            }
+        }
+    }
+
+}
+
+
+:host{
+    ::ng-deep{
+        .p-tag{
+            font-size: 1rem;
+            width: 4rem;
+            background-color: var(--Green-Color);
+        }
+        .p-tabview, .p-tabview-nav, .p-tabview-panels, .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+            background: var(--sidebar-bg-color);
+        }
+        .p-tabview{
+            margin-top: 2rem; 
+            .p-tabview-nav li{
+                &.p-highlight .p-tabview-nav-link {
+                    background-color: inherit;
+                    border-color: var(--Blue-Color);
+                    color: var(--text-color);
+                    &:hover{
+                        background-color: inherit;
+                        color: var(--text-color);
+                    }
+                }
+                .p-tabview-nav-link {
+                    background-color: inherit;
+                    &:hover{
+                        background-color: inherit !important;
+                        color: var(--text-color) !important;
+                    }
+                }
+            } 
+            .p-tabview-panels{
+                .p-tabview-panel{
+                    .title{
+                        font-weight: bold;
+                    }
+                    .content, .rating{
+                        margin: 1rem 0rem 2rem 1rem ;
+                    }
+                    .rating{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        .rating-general{
+                            flex: 1;
+                            h1{
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .rating-details{
+                            flex: 2;
+                            width: 100%;
+                            .p-progressbar{
+                                display: inline-block;
+                                width: 90%;
+                                margin-left: .5rem;
+                            }
+                            .p-progressbar .p-progressbar-label{
+                                display: none !important;
+                            }
+                        }
+                    }
+                    .comment{
+                        .comment-user, .comment-date-rating{
+                            display: flex;
+                            align-items: center;
+                        }
+                        .comment-user{
+                            margin-bottom: .5rem;
+                            .p-avatar{
+                                margin-right: .5rem;
+                            }
+                        }
+                        .comment-date-rating{
+                            margin-left: 1rem;
+                            margin-bottom: 1rem;
+                            .p-rating{
+                                margin-right: 1rem;
+                                display: inline-block;
+                            }
+                        }
+                        .comment-content{
+                            margin-left: 1rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

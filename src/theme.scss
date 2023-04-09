@@ -1,8 +1,10 @@
 
 
 :root {
-    --bg-color: ##fff;
+    --bg-color: #fff;
     --text-color: #000;
+    --sidebar-bg-color: #fff;
+    --sidebar-text-color: #000;
     
     --Green-Color: #12b886 ;
     --Blue-Color: #4c6ef5 ;
@@ -15,4 +17,6 @@
 .dark-mode {
     --bg-color: #1c1b29 ;
     --text-color: #fff;
+    --sidebar-bg-color: #1c1b29;
+    --sidebar-text-color: #fff;
 }

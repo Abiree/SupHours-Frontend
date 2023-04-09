@@ -1,0 +1,145 @@
+<div class="Sh-Course-Detail">
+    <div class="Sh-Course-Card">
+        <img class="Sh-Course-Card-Image" src={{course?.image}} alt={{course?.title}}/>
+        <div class="Sh-Course-Card-Body">
+            <p-tag value="new"></p-tag>
+            <h1 class="Sh-Course-Card-Title">{{course?.title}}</h1>
+            <p>Professor: <span>{{course?.professor?.name}}</span></p>
+            <p>Level: <span>{{course?.level}}</span></p>
+            <p>Subject: <span>{{course?.subject}}</span></p>
+            <div class="Sh-Course-Card-Actions">
+                <button class="Sh-Course-Enroll-Btn Primary">
+                    Enroll Now
+                </button>
+                <i class="pi pi-bookmark-fill text-3xl" style="font-size: 2rem; color: 'var(--Yellow-Color)';" severity="warn"></i>
+            </div>
+        </div>
+    </div>
+    <p-tabView>
+        <p-tabPanel header="About Course">
+            <p class="title">
+                Description :
+            </p>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="title">
+                Rating :
+            </p>
+            <div class="rating">
+                <div class="rating-general">
+                    <h1>{{course?.rating}}</h1>
+                    <p-rating *ngIf="course" [(ngModel)]="course.rating" [readonly]="true" [cancel]="false"></p-rating>
+                    <p>40 000</p>
+                </div>
+                <div class="rating-details">
+                    <div>
+                        <span>5</span><p-progressBar [style]="{ height: '6px' }" [value]="60"></p-progressBar>
+                    </div>
+                    <div>
+                        <span>4</span><p-progressBar [style]="{ height: '6px' }" [value]="20"></p-progressBar>
+                    </div>
+                    <div>
+                        <span>3</span><p-progressBar [style]="{ height: '6px' }" [value]="10"></p-progressBar>
+                    </div>
+                    <div>
+                        <span>2</span><p-progressBar [style]="{ height: '6px' }" [value]="2"></p-progressBar>
+                    </div>
+                    <div>
+                        <span>1</span><p-progressBar [style]="{ height: '6px' }" [value]="80"></p-progressBar>
+                    </div>
+                    
+                </div>
+            </div>
+            <p-tabView>
+                <p-tabPanel header="Tout">
+                    <div class="comment">
+                        <div class="comment-user">
+                            <p-avatar label="C" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                            <p>Eladraoui chouaib</p>
+                        </div>
+                        <div class="comment-date-rating">
+                            <p-rating *ngIf="course" [(ngModel)]="course.rating" [readonly]="true" [cancel]="false"></p-rating>
+                            <p>16/02/2023</p>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-user">
+                            <p-avatar label="C" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                            <p>Eladraoui chouaib</p>
+                        </div>
+                        <div class="comment-date-rating">
+                            <p-rating *ngIf="course" [(ngModel)]="course.rating" [readonly]="true" [cancel]="false"></p-rating>
+                            <p>16/02/2023</p>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-user">
+                            <p-avatar label="C" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                            <p>Eladraoui chouaib</p>
+                        </div>
+                        <div class="comment-date-rating">
+                            <p-rating *ngIf="course" [(ngModel)]="course.rating" [readonly]="true" [cancel]="false"></p-rating>
+                            <p>16/02/2023</p>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <p-tabPanel header="Positifs">
+                    <div class="comment">
+                        <div class="comment-user">
+                            <p-avatar label="C" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                            <p>Eladraoui chouaib</p>
+                        </div>
+                        <div class="comment-date-rating">
+                            <p-rating *ngIf="course" [(ngModel)]="course.rating" [readonly]="true" [cancel]="false"></p-rating>
+                            <p>16/02/2023</p>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <p-tabPanel header="negatifs">
+
+                </p-tabPanel>
+                <p-tabPanel header="5">
+
+                </p-tabPanel>
+                <p-tabPanel header="4">
+
+                </p-tabPanel>
+                <p-tabPanel header="3">
+
+                </p-tabPanel>
+                <p-tabPanel header="2">
+
+                </p-tabPanel>
+                <p-tabPanel header="1">
+
+                </p-tabPanel>
+            </p-tabView>
+        </p-tabPanel>
+        <p-tabPanel header="Summary" style="background-color: #000;">
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Sessions">
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+            </p>
+        </p-tabPanel>
+    </p-tabView>
+</div>
