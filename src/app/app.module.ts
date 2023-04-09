@@ -11,6 +11,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { TagModule } from 'primeng/tag';
 import { TabViewModule } from 'primeng/tabview';
 import { RatingModule } from 'primeng/rating'
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 //router import
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +25,8 @@ import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.c
 import { ShProgressComponent } from './components/sh-progress/sh-progress.component';
 import { ShHomeworkComponent } from './components/sh-homework/sh-homework.component';
 import { ShCourseSidebarDetailComponent } from './components/sh-course-sidebar-detail/sh-course-sidebar-detail.component';
+import { ShCalendarComponent } from './components/sh-calendar/sh-calendar.component';
+import { CalendarPage } from './pages/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { ShCourseSidebarDetailComponent } from './components/sh-course-sidebar-d
     ShTimeTableComponent,
     ShProgressComponent,
     ShHomeworkComponent,
-    ShCourseSidebarDetailComponent
+    ShCourseSidebarDetailComponent,
+    ShCalendarComponent,
+    CalendarPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,8 @@ import { ShCourseSidebarDetailComponent } from './components/sh-course-sidebar-d
     SidebarModule,
     TagModule,
     TabViewModule,
-    RatingModule
+    RatingModule,
+    FullCalendarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
