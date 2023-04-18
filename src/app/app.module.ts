@@ -7,6 +7,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { CarouselModule } from 'primeng/carousel';
 
 //router import
 import { AppRoutingModule } from './app-routing.module';
@@ -38,7 +39,8 @@ import { ShHomeworkComponent } from './components/sh-homework/sh-homework.compon
     FormsModule,
     AvatarModule,
     BadgeModule,
-    ProgressBarModule
+    ProgressBarModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
