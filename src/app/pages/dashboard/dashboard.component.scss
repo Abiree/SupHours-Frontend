@@ -1,0 +1,46 @@
+
+.dashboard-page{
+    padding: 0 2.5rem;
+}
+
+.all-courses{
+padding: 4rem 0 2rem 0;
+
+    .title-filter{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        .title{}
+        .filter{}
+    }
+
+    .cards{
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // grid-gap: 10px;
+        // grid-auto-rows: minmax(100px, auto);
+        .card{
+            padding: 1rem ;
+        }
+    }
+
+
+}
+
+
+
+.time-table-homework-progress{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+
+    @media screen and (max-width:1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:800px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

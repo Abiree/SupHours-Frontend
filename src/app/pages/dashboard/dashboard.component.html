@@ -1,1 +1,38 @@
-<sh-progress-component></sh-progress-component>
+<div class="dashboard-page">
+    <div class="all-courses">
+
+        <div class="title-filter">
+            <div class="title"><h1>Other Popular Courses</h1></div>
+            <div class="filter"><p>see all</p></div>
+        </div>
+    
+        <div class="cards">
+            
+            <p-carousel [value]="courses" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+                <ng-template let-product pTemplate="item">
+                    <div class="card">
+                        <sh-course-card></sh-course-card>
+                    </div>
+                    
+                </ng-template>
+            </p-carousel>
+    
+        </div>
+    
+    </div>
+    
+    
+    <div class="time-table-homework-progress">
+        <div> <sh-time-table></sh-time-table></div>
+        <div>  <sh-homework></sh-homework></div>
+        <div> <sh-progress-component></sh-progress-component></div>
+       
+      
+       
+    </div>
+    
+    
+    
+    
+</div>
+

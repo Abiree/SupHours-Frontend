@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { CarouselModule } from 'primeng/carousel';
 
 //router import
 import { AppRoutingModule } from './app-routing.module';
@@ -44,7 +45,8 @@ import { CalendarPage } from './pages/calendar/calendar.component';
     AvatarModule,
     BadgeModule,
     ProgressBarModule,
-    FullCalendarModule
+    FullCalendarModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
