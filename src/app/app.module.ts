@@ -7,6 +7,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { FullCalendarModule } from '@fullcalendar/angular';
 import { CarouselModule } from 'primeng/carousel';
 
 //router import
@@ -20,6 +21,8 @@ import { ShNavigationComponent } from './components/sh-navigation/sh-navigation.
 import { ShTimeTableComponent } from './components/sh-time-table/sh-time-table.component';
 import { ShProgressComponent } from './components/sh-progress/sh-progress.component';
 import { ShHomeworkComponent } from './components/sh-homework/sh-homework.component';
+import { ShCalendarComponent } from './components/sh-calendar/sh-calendar.component';
+import { CalendarPage } from './pages/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { ShHomeworkComponent } from './components/sh-homework/sh-homework.compon
     ShNavigationComponent,
     ShTimeTableComponent,
     ShProgressComponent,
-    ShHomeworkComponent
+    ShHomeworkComponent,
+    ShCalendarComponent,
+    CalendarPage
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,7 @@ import { ShHomeworkComponent } from './components/sh-homework/sh-homework.compon
     AvatarModule,
     BadgeModule,
     ProgressBarModule,
+    FullCalendarModule,
     CarouselModule
   ],
   providers: [],
